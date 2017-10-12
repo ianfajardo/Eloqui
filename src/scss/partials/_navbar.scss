@@ -1,0 +1,28 @@
+.navbar, .nav{
+	font-family: $primary-font;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.navbar{
+	background: $primary-black;
+}
+
+.navbar-primary a{
+	color: $primary-white;
+}
+
+.navbar .fa-bars{
+	color: $primary-white;
+}
+
+//.nav
+.nav{
+	box-shadow: $box-shadow;
+	margin-bottom: 60px;
+}
+
+.nav-secondary{
+	background: $primary-white;
+	padding: 30px 0;
+}

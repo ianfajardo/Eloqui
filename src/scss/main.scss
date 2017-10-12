@@ -1,0 +1,54 @@
+@import "partials/normalize";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min";
+
+@import "partials/fonts";
+@import "partials/vars";
+@import "partials/navbar";
+
+body {
+	font-size: 18px;
+	font-family: $secondary-font;
+}
+
+#main {
+	background: $primary-light-grey;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $primary-font;
+}
+
+.card {
+	border: none;
+}
+
+footer {
+	font-family: $primary-font;
+	background: $primary-green;
+	color: $primary-white;
+	margin-top: 60px;
+}
+
+footer a {
+	color: $primary-white;
+}
+
+.footer-top{
+	background: $secondary-green;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.footer-top i{
+	font-size: 2rem;
+	padding: 0 15px;
+}
+
+.feed.card{
+	margin-bottom:20px;
+}
+
+.hello, .hellos {
+	color: red;
+}
