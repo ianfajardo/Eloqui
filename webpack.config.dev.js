@@ -79,7 +79,7 @@ module.exports = [
 		},
 		output: {
 			filename: '[name].js',
-			path: path.resolve(__dirname, 'app/server')
+			path: path.resolve(__dirname, 'app')
 		},
 	}
 ];	

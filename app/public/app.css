@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700);@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,700);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,500,700);@import url(https://fonts.googleapis.com/css?family=Lora:400,700);/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -6566,15 +6566,27 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 .navbar, .nav {
-  font-family: "Montserrat";
+  font-family: "Dosis";
   text-transform: uppercase;
   font-weight: 300; }
 
 .navbar {
   background: #374249; }
 
+.homepage .navbar.sticky-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.navbar-account a {
+  padding: 0 10px; }
+
 .navbar-primary a {
   color: #ffffff; }
+  .navbar-primary a:hover {
+    text-decoration: underline; }
 
 .navbar .fa-bars {
   color: #ffffff; }
@@ -6587,24 +6599,27 @@ a.text-dark:focus, a.text-dark:hover {
   background: #ffffff;
   padding: 30px 0; }
 
+.homepage .navbar {
+  background: transparent; }
+
 body {
-  font-size: 18px;
-  font-family: "Crimson Text"; }
+  font-size: 16px;
+  font-family: "Lora"; }
 
 #main {
   background: #D1D8DC; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat"; }
+  font-family: "Dosis";
+  font-weight: 600; }
 
 .card {
   border: none; }
 
 footer {
-  font-family: "Montserrat";
+  font-family: "Dosis";
   background: #16a085;
-  color: #ffffff;
-  margin-top: 60px; }
+  color: #ffffff; }
 
 footer a {
   color: #ffffff; }
@@ -6624,3 +6639,63 @@ footer a {
 
 .hello, .hellos {
   color: red; }
+
+.jumbotron {
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 0; }
+  .jumbotron .container {
+    position: relative;
+    z-index: 2; }
+  .jumbotron h1 {
+    font-size: 5rem; }
+
+.homepage .jumbotron {
+  background: url("https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-position: center top;
+  background-size: cover; }
+  .homepage .jumbotron .jumbotron-inner {
+    max-width: 500px; }
+  .homepage .jumbotron p {
+    font-size: 1.2rem; }
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #374249;
+  background: linear-gradient(to right, #3498db, #1abc9c);
+  opacity: 0.7;
+  z-index: 1; }
+
+.features {
+  padding: 5rem 0; }
+
+.features-title {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.features-white {
+  background: #ffffff; }
+
+.signup-container .signup-image {
+  background: url("https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?auto=format&fit=crop&w=1955&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-position: center center; }
+
+.signup-container .signup-form {
+  padding: 8rem 25px;
+  max-width: 400px; }
+
+.signup-container .signup-inner {
+  background: #ffffff;
+  text-transform: uppercase; }
+
+.signup-container label {
+  display: none; }
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 12rem 2rem; } }

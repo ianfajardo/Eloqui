@@ -6,7 +6,7 @@
 @import "partials/navbar";
 
 body {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: $secondary-font;
 }
 
@@ -16,6 +16,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $primary-font;
+	font-weight: 600;
 }
 
 .card {
@@ -26,7 +27,6 @@ footer {
 	font-family: $primary-font;
 	background: $primary-green;
 	color: $primary-white;
-	margin-top: 60px;
 }
 
 footer a {
@@ -51,4 +51,88 @@ footer a {
 
 .hello, .hellos {
 	color: red;
+}
+
+.jumbotron{
+	position: relative;
+	color: #ffffff;
+	margin-bottom: 0;
+
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+
+	h1{
+		font-size:5rem;
+	}
+}
+
+.homepage .jumbotron{
+	background: url('https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+	background-position: center top;
+	background-size: cover;
+
+	.jumbotron-inner{
+		max-width: 500px;
+	}
+
+	p{
+		font-size: 1.2rem;
+	}
+}
+
+.jumbotron-overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: $primary-black;
+	background: linear-gradient(to right, #3498db, #1abc9c );
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.features{
+	padding: 5rem 0;
+}
+
+.features-title{
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+.features-white{
+	background: $primary-white;
+}
+
+.signup-container {
+	
+
+	.signup-image{
+		background: url("https://images.unsplash.com/photo-1500989145603-8e7ef71d639e?auto=format&fit=crop&w=1955&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.signup-form{
+		padding: 8rem 25px;
+		max-width: 400px;
+	}
+
+	.signup-inner{
+		background: $primary-white;
+		text-transform: uppercase;
+	}
+
+	label{
+		display: none;
+	}
+}
+
+@media (min-width: 576px){
+	.jumbotron {
+	    padding: 12rem 2rem;
+	}
 }

@@ -3,6 +3,9 @@
 Icon?
 ._*
 
+#config files
+config/db.js
+
 # Windows
 Thumbs.db
 ehthumbs.db

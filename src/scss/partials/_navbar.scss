@@ -1,15 +1,33 @@
-.navbar, .nav{
+.navbar, .nav {
 	font-family: $primary-font;
 	text-transform: uppercase;
 	font-weight: 300;
 }
 
-.navbar{
+.navbar {
 	background: $primary-black;
+}
+
+.homepage .navbar.sticky-top{
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-account {
+	a {
+		padding: 0 10px;
+	}
 }
 
 .navbar-primary a{
 	color: $primary-white;
+
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 .navbar .fa-bars{
@@ -25,4 +43,9 @@
 .nav-secondary{
 	background: $primary-white;
 	padding: 30px 0;
+}
+
+//homepage nav
+.homepage .navbar{
+	background: transparent;
 }
